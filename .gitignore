@@ -1,9 +1,5 @@
-.DS_Store
-Thumbs.db
-/fsh-generated
-/input-cache
-/output
-/temp
-/template
-/jre
 /node_modules
+/fsh-generated
+/jre
+/validator_cli*
+/differentials
