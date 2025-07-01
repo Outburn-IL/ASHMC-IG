@@ -1,7 +1,7 @@
 {
-  "name": "{project name}",
-  "version": "0.1.0",
-  "description": "{description}",
+  "name": "il.fhir.r4.ashmc",
+  "version": "0.2.3",
+  "description": "FHIR Profiles and Implementation Guide for Assuta Ashdod Medical Center",
   "type": "module",
   "scripts": {
     "ruleset": "node updateRuleSet.js",
@@ -17,13 +17,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/{organization}/{repository_name}.git"
+    "url": "git+https://github.com/Outburn-IL/ASHMC.git"
   },
-  "author": "{publisher_full_name}",
+  "author": "Assuta Ashdod Medical Center",
   "bugs": {
-    "url": "https://github.com/{organization}/{repository_name}/issues" 
+    "url": "https://github.com/Outburn-IL/ASHMC/issues"
   },
-  "homepage": "https://github.com/{organization}/{repository_name}#readme",
+  "homepage": "https://github.com/Outburn-IL/ASHMC#readme",
   "dependencies": {
     "adm-zip": "^0.5.14",
     "axios": "^1.7.2",
