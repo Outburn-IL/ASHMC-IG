@@ -18,7 +18,6 @@ Description: "Assuta Ashdod Tafnit Department"
 * identifier[tafnit].value 1..1
 
 * type contains tafnit-type 1..1 and org-hier-type 0..1
-* type[moh-department-type] 1..1
 * type[moh-department-type].coding 1..*
 * type[moh-department-type].coding.system 1..1
 * type[moh-department-type].coding.code 1..1 

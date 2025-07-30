@@ -48,3 +48,18 @@ Description: "Assuta Ashdod Hilan Practitioner"
 * telecom[email].system 1..1
 * telecom[email].system = #email (exactly)
 * telecom[email].value 1..1
+
+* communication.coding ^slicing.discriminator.type = #value
+* communication.coding ^slicing.discriminator.path = "system"
+* communication.coding ^slicing.rules = #open
+* communication.coding ^slicing.ordered = false
+* communication.coding contains iso 0..1 and ash 0..1
+* communication.coding[iso] 0..1
+* communication.coding[iso].system 1..1
+* communication.coding[iso].system = "urn:ietf:bcp:47" (exactly)
+* communication.coding[iso].code 1..1
+* communication.coding[ash] 0..1
+* communication.coding[ash].system 1..1
+* communication.coding[ash].system = "http://fhir.ashmc.co.il/cs/language-code" (exactly)
+* communication.coding[ash].code 1..1
+
