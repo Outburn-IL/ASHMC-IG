@@ -64,16 +64,16 @@ Description: "Assuta Ashdod MC Organization Hospital"
 * telecom[email].value 1..1
 * telecom[email].value = "ashdodcc@assuta.co.il" (exactly)
 
-* address 1..*
-* address.line 1..*
-* address.line = "הרפואה 7" (exactly)
-* address.city = "אשדוד" (exactly)
-* address.city.extension[cityCode] 1..1
-* address.city.extension[cityCode].valueCodeableConcept 1..1
-* address.city.extension[cityCode].valueCodeableConcept.coding 1..*
-* address.city.extension[cityCode].valueCodeableConcept.coding.system 1..1
-* address.city.extension[cityCode].valueCodeableConcept.coding.system = "http://fhir.health.gov.il/cs/city-symbol" (exactly)
-* address.city.extension[cityCode].valueCodeableConcept.coding.code 1..1
-* address.city.extension[cityCode].valueCodeableConcept.coding.code = #70 (exactly)
-* address.city.extension[cityCode].valueCodeableConcept.coding.display 1..1
-* address.city.extension[cityCode].valueCodeableConcept.coding.display = "אשדוד" (exactly)
+// * address 1..*
+// * address.line 1..*
+// * address.line = "הרפואה 7" (exactly)
+// * address.city = "אשדוד" (exactly)
+// * address.city.extension[cityCode] 1..1
+// * address.city.extension[cityCode].valueCodeableConcept 1..1
+// * address.city.extension[cityCode].valueCodeableConcept.coding 1..*
+// * address.city.extension[cityCode].valueCodeableConcept.coding.system 1..1
+// * address.city.extension[cityCode].valueCodeableConcept.coding.system = "http://fhir.health.gov.il/cs/city-symbol" (exactly)
+// * address.city.extension[cityCode].valueCodeableConcept.coding.code 1..1
+// * address.city.extension[cityCode].valueCodeableConcept.coding.code = #70 (exactly)
+// * address.city.extension[cityCode].valueCodeableConcept.coding.display 1..1
+// * address.city.extension[cityCode].valueCodeableConcept.coding.display = "אשדוד" (exactly)

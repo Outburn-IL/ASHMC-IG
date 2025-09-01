@@ -1,0 +1,363 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:86223379-f72c-576d-bc75-ea21f50dc873",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "TAF.33056",
+        "meta": {
+          "security": [
+            {
+              "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+              "code": "organization",
+              "display": "יחידה ארגונית"
+            }
+          ],
+          "profile": [
+            "http://fhir.health.gov.il/StructureDefinition/il-core-organization",
+            "http://fhir.ashmc.co.il/StructureDefinition/ashmc-dep-tafnit"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://fhir.ashmc.co.il/identifier/tafnit-id",
+            "value": "33056"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://fhir.ashmc.co.il/cs/tafnit-dept-type",
+                "code": "50",
+                "display": "מלר\"ד"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://fhir.health.gov.il/cs/department-type-moh",
+                "code": "55100",
+                "display": "חדרי מיון \\ לידה \\ נתוח - ר.דחופה יולדות"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://fhir.ashmc.co.il/cs/org-hier-type",
+                "code": "1660",
+                "display": "מיון יולדות"
+              },
+              {
+                "system": "http://fhir.ashmc.co.il/cs/org-hier-type",
+                "code": "166",
+                "display": "יולדות"
+              }
+            ]
+          }
+        ],
+        "active": true,
+        "name": "מיון יולדות",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "0723398737"
+          },
+          {
+            "system": "fax",
+            "value": "0723398949"
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/ORG.HIER.1660"
+        },
+        "contact": [
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "ADMIN",
+                  "display": "Administrative"
+                }
+              ],
+              "text": "מנהל.ת מחלקה"
+            },
+            "name": {
+              "use": "official",
+              "text": "עירד בורשטין"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/TAF.33056"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f017c2c5-f7db-5421-9266-4f299c18f0cd",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "ORG.HIER.1660",
+        "meta": {
+          "security": [
+            {
+              "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+              "code": "organization",
+              "display": "יחידה ארגונית"
+            }
+          ],
+          "profile": [
+            "http://fhir.health.gov.il/StructureDefinition/il-core-organization",
+            "http://fhir.ashmc.co.il/StructureDefinition/ashmc-org-hier"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://fhir.ashmc.co.il/cs/org-hier-type",
+            "value": "1660"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://fhir.ashmc.co.il/cs/org-hier-type",
+                "code": "1660",
+                "display": "מיון יולדות"
+              },
+              {
+                "system": "http://fhir.ashmc.co.il/cs/org-hier-type",
+                "code": "166",
+                "display": "יולדות"
+              }
+            ],
+            "text": "מיון יולדות"
+          }
+        ],
+        "name": "מיון יולדות",
+        "partOf": {
+          "reference": "Organization/ORG.HIER.166"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/ORG.HIER.1660"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6555976b-fcf1-574f-ada5-5f2c38425d50",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "ORG.HIER.166",
+        "meta": {
+          "security": [
+            {
+              "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+              "code": "organization",
+              "display": "יחידה ארגונית"
+            }
+          ],
+          "profile": [
+            "http://fhir.health.gov.il/StructureDefinition/il-core-organization",
+            "http://fhir.ashmc.co.il/StructureDefinition/ashmc-org-hier"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://fhir.ashmc.co.il/cs/org-hier-type",
+            "value": "166"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://fhir.ashmc.co.il/cs/org-hier-type",
+                "code": "166",
+                "display": "יולדות"
+              }
+            ],
+            "text": "מיון יולדות"
+          }
+        ],
+        "name": "מיון יולדות",
+        "partOf": {
+          "reference": "Organization/ORG.HIER.16"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/ORG.HIER.166"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3f44387f-68ba-52e1-99db-27af2eadbfb5",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "ORG.HIER.16",
+        "meta": {
+          "security": [
+            {
+              "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+              "code": "organization",
+              "display": "יחידה ארגונית"
+            }
+          ],
+          "profile": [
+            "http://fhir.health.gov.il/StructureDefinition/il-core-organization",
+            "http://fhir.ashmc.co.il/StructureDefinition/ashmc-org-hier"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://fhir.ashmc.co.il/cs/org-hier-type",
+            "value": "16"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://fhir.ashmc.co.il/cs/org-hier-type",
+                "code": "16",
+                "display": "מערך נשים ויולדות"
+              }
+            ],
+            "text": "מערך נשים ויולדות"
+          }
+        ],
+        "name": "מערך נשים ויולדות",
+        "partOf": {
+          "reference": "Organization/SITE.1"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/ORG.HIER.16"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5c6895db-0c46-5fd0-85cf-aeadad8c9f26",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "SITE.1",
+        "meta": {
+          "security": [
+            {
+              "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+              "code": "organization",
+              "display": "יחידה ארגונית"
+            }
+          ],
+          "profile": [
+            "http://fhir.health.gov.il/StructureDefinition/il-core-organization",
+            "http://fhir.ashmc.co.il/StructureDefinition/ashmc-org-site"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://fhir.ashmc.co.il/identifier/site-id",
+            "value": "1"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://fhir.health.gov.il/cs/institution-type-moh",
+                "code": "1",
+                "display": "אשפוז כללי"
+              }
+            ]
+          }
+        ],
+        "name": "בית החולים הציבורי אסותא אשדוד",
+        "partOf": {
+          "reference": "Organization/HOSP.100"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/SITE.1"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cf9cba75-fdb3-5c00-ab94-2ef599cae6ce",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "HOSP.100",
+        "meta": {
+          "security": [
+            {
+              "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+              "code": "organization",
+              "display": "יחידה ארגונית"
+            }
+          ],
+          "profile": [
+            "http://fhir.health.gov.il/StructureDefinition/il-core-organization",
+            "http://fhir.ashmc.co.il/StructureDefinition/ashmc-org-hosp"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://institutions.health.gov.il/Institutions",
+            "value": "01608"
+          },
+          {
+            "system": "http://fhir.health.gov.il/identifier/legal-entity",
+            "value": "580757821"
+          },
+          {
+            "system": "http://fhir.ashmc.co.il/identifier/hosp-id",
+            "value": "100"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://fhir.health.gov.il/cs/institution-type-moh",
+                "code": "1",
+                "display": "אשפוז כללי"
+              }
+            ]
+          }
+        ],
+        "name": "בית החולים הציבורי אסותא אשדוד",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "08-3004100"
+          },
+          {
+            "system": "fax",
+            "value": "072-3392131"
+          },
+          {
+            "system": "email",
+            "value": "ashdodcc@assuta.co.il"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "הרפואה 7"
+            ],
+            "city": "אשדוד"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/HOSP.100"
+      }
+    }
+  ]
+}

@@ -18,14 +18,18 @@ Description: "Assuta Ashdod Tafnit Department"
 * identifier[tafnit].value 1..1
 
 * type contains tafnit-type 1..1 and org-hier-type 0..1
-* type[moh-department-type].coding 1..*
-* type[moh-department-type].coding.system 1..1
-* type[moh-department-type].coding.code 1..1 
+// * type[moh-department-type].coding 1..*
+// * type[moh-department-type].coding.system 1..1
+// * type[moh-department-type].coding.code 1..1 
+
+* type[tafnit-type] from $vsOrgTafType (required)
 * type[tafnit-type].coding 1..*
 * type[tafnit-type].coding.system 1..1
 * type[tafnit-type].coding.system = "http://fhir.ashmc.co.il/cs/tafnit-dept-type" (exactly)
 * type[tafnit-type].coding.code 1..1 
 * type[tafnit-type].coding.display 1..1 
+
+* type[org-hier-type] from $vsOrgHierType (required)
 * type[org-hier-type].coding 0..*
 * type[org-hier-type].coding.system 0..1
 * type[org-hier-type].coding.system = "http://fhir.ashmc.co.il/cs/org-hier-type" (exactly)
