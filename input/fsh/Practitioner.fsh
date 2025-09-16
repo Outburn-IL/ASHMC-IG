@@ -7,18 +7,18 @@ Description: "Assuta Ashdod Hilan Practitioner"
 
 
 * meta 1..1
-* meta.profile = "http://fhir.health.gov.il/StructureDefinition/il-core-practicioner" (exactly)
-
-* meta.security ^slicing.discriminator.type = #value
-* meta.security ^slicing.discriminator.path = "security.code"
-* meta.security ^slicing.rules = #open
-* meta.security ^slicing.ordered = false
-* meta.security contains HDP 1..1
-* meta.security[HDP].system 1..1
+// * meta.profile = "http://fhir.health.gov.il/StructureDefinition/il-core-practicioner" (exactly)
+* meta only ILHDPMeta
+// * meta.security ^slicing.discriminator.type = #value
+// * meta.security ^slicing.discriminator.path = "security.code"
+// * meta.security ^slicing.rules = #open
+// * meta.security ^slicing.ordered = false
+// * meta.security contains HDP 1..1
+// * meta.security[HDP].system 1..1
 * meta.security[HDP].system = "http://fhir.health.gov.il/cs/il-hdp-information-buckets" (exactly)
-* meta.security[HDP].code 1..1
+// * meta.security[HDP].code 1..1
 * meta.security[HDP].code = #practitioner (exactly)
-* meta.security[HDP].display 1..1
+// * meta.security[HDP].display 1..1
 * meta.security[HDP].display = "מטפל" (exactly)
 
 * id 1..1
@@ -48,3 +48,18 @@ Description: "Assuta Ashdod Hilan Practitioner"
 * telecom[email].system 1..1
 * telecom[email].system = #email (exactly)
 * telecom[email].value 1..1
+
+* communication.coding ^slicing.discriminator.type = #value
+* communication.coding ^slicing.discriminator.path = "system"
+* communication.coding ^slicing.rules = #open
+* communication.coding ^slicing.ordered = false
+* communication.coding contains iso 0..1 and ash 0..1
+* communication.coding[iso] 0..1
+* communication.coding[iso].system 1..1
+* communication.coding[iso].system = "urn:ietf:bcp:47" (exactly)
+* communication.coding[iso].code 1..1
+* communication.coding[ash] 0..1
+* communication.coding[ash].system 1..1
+* communication.coding[ash].system = "http://fhir.ashmc.co.il/cs/language-code" (exactly)
+* communication.coding[ash].code 1..1
+

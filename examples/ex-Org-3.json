@@ -1,0 +1,103 @@
+{
+  "resourceType": "Organization",
+  "id": "TAF.33264",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "organization",
+        "display": "יחידה ארגונית"
+      }
+    ],
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-organization",
+      "http://fhir.ashmc.co.il/StructureDefinition/ashmc-dep-tafnit"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.ashmc.co.il/identifier/tafnit-id",
+      "value": "33264"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://fhir.ashmc.co.il/cs/tafnit-dept-type",
+          "code": "30",
+          "display": "מרפאות"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://fhir.health.gov.il/cs/department-type-moh",
+          "code": "32020",
+          "display": "מרפאות - אנדוקרינולוגיה ילדים"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://fhir.ashmc.co.il/cs/org-hier-type",
+          "code": "1440",
+          "display": "מרפאות ילדים"
+        },
+        {
+          "system": "http://fhir.ashmc.co.il/cs/org-hier-type",
+          "code": "144",
+          "display": "מרפאות ילדים"
+        }
+      ]
+    }
+  ],
+  "active": true,
+  "name": "מרפאת אנדוקרינולוגיה וסכרת ילדים",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0723399783"
+    },
+    {
+      "system": "fax",
+      "value": "0723399258"
+    },
+    {
+      "system": "email",
+      "value": "APendo@assuta.co.il@!"
+    }
+  ],
+  "partOf": {
+    "reference": "Organization/ORG.HIER.1440"
+  },
+  "contact": [
+    {
+      "purpose": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+            "code": "ADMIN",
+            "display": "Administrative"
+          }
+        ],
+        "text": "מנהל.ת מחלקה"
+      },
+      "name": {
+        "use": "official",
+        "text": "שירה הראל"
+      }
+    },
+    {
+      "purpose": {
+        "text": "אח.ות ראשי.ת"
+      },
+      "name": {
+        "use": "official",
+        "text": "מיכל הלל"
+      }
+    }
+  ]
+}

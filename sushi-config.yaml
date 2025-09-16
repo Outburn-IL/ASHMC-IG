@@ -9,7 +9,7 @@ name: ASHMC
 title: Assuta Ashdod Medical Center Profiles
 description: FHIR Profiles and Implementation Guide for Assuta Ashdod Medical Center
 status: draft # draft | active | retired | unknown
-version: 0.2.3
+version: 0.2.9
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -20,10 +20,10 @@ publisher:
 dependencies:
   il.core.fhir.r4: 
     uri: http://fhir.health.gov.il/ImplementationGuide/il.core.fhir.r4
-    version: 0.17.5
+    version: 0.18.4
   il.hdp.fhir.r4: 
     uri: http://fhir.health.gov.il/ImplementationGuide/il.core.hdp.r4
-    version: 0.1.0
+    version: 0.2.4
     
 
 # ╭──────────────────────────────────────────SUSHI flags───────────────────────────────────────────╮

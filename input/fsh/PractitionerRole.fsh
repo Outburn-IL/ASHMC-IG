@@ -6,19 +6,20 @@ Description: "Assuta Ashdod Practitioner Role from Tafnit"
 * insert ConformanceMetadata
 
 * meta 1..1
-* meta.profile = "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role" (exactly)
-* meta.source 1..1
+// * meta.profile = "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role" (exactly)
+// * meta.source 1..1
 
-* meta.security ^slicing.discriminator.type = #value
-* meta.security ^slicing.discriminator.path = "security.code"
-* meta.security ^slicing.rules = #open
-* meta.security ^slicing.ordered = false
-* meta.security contains HDP 1..1
-* meta.security[HDP].system 1..1
+* meta only ILHDPMeta
+// * meta.security ^slicing.discriminator.type = #value
+// * meta.security ^slicing.discriminator.path = "security.code"
+// * meta.security ^slicing.rules = #open
+// * meta.security ^slicing.ordered = false
+// * meta.security contains HDP 1..1
+// * meta.security[HDP].system 1..1
 * meta.security[HDP].system = "http://fhir.health.gov.il/cs/il-hdp-information-buckets" (exactly)
-* meta.security[HDP].code 1..1
+// * meta.security[HDP].code 1..1
 * meta.security[HDP].code = #practitioner (exactly)
-* meta.security[HDP].display 1..1
+// * meta.security[HDP].display 1..1
 * meta.security[HDP].display = "מטפל" (exactly)
 
 * id 1..1
