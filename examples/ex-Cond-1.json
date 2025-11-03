@@ -1,0 +1,108 @@
+{
+  "resourceType": "Condition",
+  "meta": {
+    "profile": [
+      "http://fhir.ashmc.co.il/StructureDefinition/ashmc-diagnosis-condition"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.ashmc.co.il/identifier/cml-diagnosis-id",
+      "value": "diag1111"
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+      },
+      {
+        "code": "פעיל",
+        "system": "http://fhir.ashmc.co.il/cs/cml-diag-clinical-status"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+      },
+      {
+        "code": "1",
+        "system": "http://fhir.ashmc.co.il/cs/cml-diag-ver-status"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "encounter-diagnosis",
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "display": "Encounter Diagnosis"
+        },
+        {
+          "code": "8",
+          "system": "http://fhir.ashmc.co.il/cs/cml-diag-category",
+          "display": "אבחנות קרדיו למטופ"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "39065001",
+        "system": "http://snomed.info/sct",
+        "display": "Burn of ear"
+      },
+      {
+        "code": "111",
+        "system": "http://fhir.ashmc.co.il/cs/cml-diag-code",
+        "display": "11111"
+      },
+      {
+        "code": "222",
+        "system": "http://fhir.ashmc.co.il/cs/cml-diag-extended-code",
+        "display": "22222"
+      }
+    ],
+    "text": "1111"
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "LT",
+          "system": "http://snomed.info/sct",
+          "display": "Left"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/1111",
+    "identifier": {
+      "system": "il-id",
+      "value": "1212121"
+    }
+  },
+  "encounter": {
+    "identifier": {
+      "system": "http://fhir.ashmc.co.il/identifier/cml-enc-session-id",
+      "value": "enc1111"
+    }
+  },
+  "onsetDateTime": "2012-05-24",
+  "recordedDate": "2012-05-25",
+  "recorder": {
+    "reference": "Practitioner/111"
+  },
+  "note": [
+    {
+      "text": "Patient sick."
+    }
+  ]
+}

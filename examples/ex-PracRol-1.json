@@ -1,0 +1,53 @@
+{
+  "resourceType": "PractitionerRole",
+  "meta": {
+    "profile": [
+      "http://fhir.ashmc.co.il/StructureDefinition/ashmc-practitioner-role"
+    ],
+    "source": "http://ashmc.co.il/information-system/hilan"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.ashmc.co.il/identifier/job-id",
+      "value": "1111"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/practitioner-md"
+  },
+  "organization": [
+    {
+      "identifier": {
+        "value": "ins.123"
+      }
+    }
+  ],
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://fhir.ashmc.co.il/cs/job-sector-hilan",
+          "code": "1",
+          "display": "1"
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/practitioner-role",
+          "code": "doctor",
+          "display": "Doctor"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "code": "1",
+          "system": "http://fhir.ashmc.co.il/cs/job-code-tafnit",
+          "display": "ילדים"
+        }
+      ]
+    }
+  ]
+}

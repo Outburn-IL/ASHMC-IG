@@ -1,0 +1,115 @@
+{
+  "resourceType": "Practitioner",
+  "meta": {
+    "profile": [
+      "http://fhir.ashmc.co.il/StructureDefinition/ashmc-practitioner-hilan"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.ashmc.co.il/identifier/login-id",
+      "value": "login1111"
+    },
+    {
+      "system": "http://fhir.ashmc.co.il/identifier/encrypted-login-id",
+      "value": "enclogin1111"
+    },
+    {
+      "system": "http://fhir.health.gov.il/identifier/il-national-id",
+      "value": "000000018"
+    },
+    {
+      "system": "http://fhir.health.gov.il/identifier/encrypted-id-primary-moh",
+      "value": "encilid1111"
+    }
+  ],
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/language",
+          "valueCode": "he"
+        }
+      ],
+      "prefix": [
+        "דר'"
+      ],
+      "family": "גרינפלד",
+      "given": [
+        "דיאנה"
+      ],
+      "text": "דר' גרינפלד דיאנה"
+    }
+  ],
+  "active": true,
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "054-6421420",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "DG@example.com"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1979-04-30",
+  "address": [
+    {
+      "line": [
+        "אלכסנדר פן 1א"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "פן אלכסנדר"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "1"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID",
+              "valueString": "4"
+            }
+          ]
+        }
+      ],
+      "city": "תל אביב",
+      "_city": {
+        "extension": [
+          {
+            "url": "http://fhir.health.gov.il/StructureDefinition/ext-city-code",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "5000",
+                  "system": "http://fhir.health.gov.il/cs/city-symbol"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "postalCode": "6964101"
+    }
+  ],
+  "communication": [
+    {
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "en"
+        },
+        {
+          "system": "http://fhir.ashmc.co.il/cs/language-code",
+          "code": "101",
+          "display": "אנגלית"
+        }
+      ]
+    }
+  ]
+}
