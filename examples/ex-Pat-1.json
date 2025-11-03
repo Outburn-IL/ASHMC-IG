@@ -1,0 +1,179 @@
+{
+  "resourceType": "Patient",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "patientDemographics"
+      }
+    ],
+    "profile": [
+      "http://fhir.ashmc.co.il/StructureDefinition/ashmc-patient"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-il-hmo",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "103",
+            "system": "http://fhir.health.gov.il/cs/paying-entity-moh",
+            "display": "קופת חולים מכבי"
+          },
+          {
+            "code": "1001",
+            "system": "http://fhir.ashmc.co.il/cs/paying-entity-local",
+            "display": "קופת חולים מכבי"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "given",
+          "valueString": "אברהם"
+        },
+        {
+          "url": "role",
+          "valueCode": "FTH"
+        }
+      ],
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-administrative-parent-name"
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-patient-immigration",
+      "extension": [
+        {
+          "url": "origin",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://fhir.ashmc.co.il/cs/country-code",
+                "code": "24",
+                "display": "BRAZIL"
+              },
+              {
+                "system": "http://fhir.ashmc.co.il/cs/country-code",
+                "code": "810",
+                "display": "BRAZIL"
+              }
+            ]
+          }
+        },
+        {
+          "url": "date",
+          "valueDate": "2020"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://fhir.ashmc.co.il/identifier/pat-id-internal",
+      "value": "1111"
+    },
+    {
+      "system": "http://fhir.health.gov.il/identifier/il-national-id",
+      "value": "000000018"
+    },
+    {
+      "system": "http://fhir.health.gov.il/identifier/encrypted-id-primary-moh",
+      "value": "enc1111"
+    },
+    {
+      "system": "http://fhir.ashmc.co.il/identifier/pat-id-tafnit",
+      "value": "TAF1111"
+    },
+    {
+      "system": "http://fhir.ashmc.co.il/identifier/pat-id-cml",
+      "value": "CML1111"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "ישראלה"
+      ],
+      "family": "ישראלי"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "033467911",
+      "use": "home"
+    },
+    {
+      "system": "phone",
+      "value": "052467911",
+      "use": "mobile"
+    },
+    {
+      "system": "phone",
+      "value": "022467911",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "Israel@example.com"
+    }
+  ],
+  "gender": "female",
+  "address": [
+    {
+      "line": [
+        "אלכסנדר פן 1א"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "פן אלכסנדר"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "1"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox",
+              "valueString": "1446"
+            }
+          ]
+        }
+      ],
+      "type": "physical",
+      "text": "אלכסנדר פן 1א' דירה 4 תל אביב",
+      "city": "תל אביב",
+      "_city": {
+        "extension": [
+          {
+            "url": "http://fhir.health.gov.il/StructureDefinition/ext-city-code",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "5000",
+                  "system": "http://fhir.health.gov.il/cs/city-symbol"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "postalCode": "6964101"
+    }
+  ],
+  "active": true,
+  "birthDate": "2003-04-17",
+  "maritalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "code": "D",
+        "display": "Divorced"
+      }
+    ]
+  }
+}
