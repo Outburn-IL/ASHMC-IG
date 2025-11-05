@@ -57,16 +57,6 @@
         "code": "39065001",
         "system": "http://snomed.info/sct",
         "display": "Burn of ear"
-      },
-      {
-        "code": "111",
-        "system": "http://fhir.ashmc.co.il/cs/cml-diag-code",
-        "display": "11111"
-      },
-      {
-        "code": "222",
-        "system": "http://fhir.ashmc.co.il/cs/cml-diag-extended-code",
-        "display": "22222"
       }
     ],
     "text": "1111"
