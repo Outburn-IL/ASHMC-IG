@@ -22,7 +22,7 @@ const unzipDirectory = async (inputFilePath, outputDirectory) => {
 };
 
 const extractFileName = (contentDisposition) => {
-  let filename = 'OpenJDK11.zip'; // default
+  let filename = 'OpenJDK21.zip'; // default
   if (typeof contentDisposition === 'string' && contentDisposition.startsWith('attachment;')) {
     const parts = contentDisposition.split(';');
     const namePart = parts.length > 1 ? parts[1].trimStart() : undefined;
@@ -91,7 +91,7 @@ const installJre = async () => {
 };
 
 const install = async () => {
-  const version = 11;
+  const version = 21;
   const options = {
     openjdk_impl: "hotspot",
     release: "latest",
