@@ -3,8 +3,16 @@
   "meta": {
     "profile": [
       "http://fhir.ashmc.co.il/StructureDefinition/ashmc-practitioner-hilan"
-    ]
+    ],
+    "security": [
+            {
+              "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+              "code": "practitioner",
+              "display": "מטפל"
+            }
+          ]
   },
+    "id":"PRAC.1",
   "identifier": [
     {
       "system": "http://fhir.ashmc.co.il/identifier/login-id",

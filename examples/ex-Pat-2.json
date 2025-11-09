@@ -1,0 +1,195 @@
+{
+  "resourceType": "Patient",
+  "id": "TAF.123456",
+  "meta": {
+    "profile": [
+      "http://fhir.ashmc.co.il/StructureDefinition/ashmc-patient"
+    ],
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "patientDemographics",
+        "display": "דמוגרפיה"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "given",
+          "valueString": "שמעון"
+        },
+        {
+          "url": "role",
+          "valueCode": "FTH"
+        }
+      ],
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-administrative-parent-name"
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-il-hmo",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.health.gov.il/cs/paying-entity-moh",
+            "code": "102"
+          },
+          {
+            "system": "http://fhir.ashmc.co.il/cs/paying-entity-local",
+            "code": "2",
+            "display": "מכבי",
+            "userSelected": true
+          }
+        ],
+        "text": "מכבי"
+      }
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-patient-immigration",
+      "extension": [
+        {
+          "url": "origin",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://fhir.ashmc.co.il/cs/country-code",
+                "code": "1-670",
+                "display": "איטליה",
+                "userSelected": true
+              },
+              {
+                "system": "http://fhir.ashmc.co.il/cs/country-code-moh",
+                "code": "670",
+                "display": "ITALY",
+                "userSelected": false
+              },
+              {
+                "system": "urn:iso:std:iso:3166",
+                "code": "ITA",
+                "display": "Italy",
+                "userSelected": false
+              }
+            ]
+          }
+        },
+        {
+          "url": "date",
+          "valueDate": "2020-02-02"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://fhir.ashmc.co.il/identifier/pat-id-internal",
+      "value":"123123"
+    },
+    {
+      "system": "http://fhir.ashmc.co.il/identifier/pat-id-tafnit",
+      "value": "123456"
+    },
+    {
+      "system": "http://fhir.ashmc.co.il/identifier/pat-id-cml",
+      "value": "99999"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PPN"
+          }
+        ]
+      },
+      "system": "http://hl7.org/fhir/sid/passport-ITA",
+      "value": "000000018"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "כהן",
+      "given": [
+        "יעקב"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "2015-01-02",
+  "address": [
+    {
+      "line": [
+        "ארלוזורוב 2 ירושלים"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "ארלוזורוב"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "2"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox",
+              "valueString": "1234"
+            }
+          ]
+        }
+      ],
+      "city": "ירושלים",
+      "_city": {
+        "extension": [
+          {
+            "url": "http://fhir.health.gov.il/StructureDefinition/ext-city-code",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://fhir.health.gov.il/cs/city-symbol",
+                  "code": "3000",
+                  "display": "ירושלים"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "postalCode": "111"
+    }
+  ],
+  "maritalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "UNK",
+        "display": "unknown"
+      }
+    ]
+  },
+  "managingOrganization": {
+    "reference": "Organization/HOSP.100"
+  },
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "ru",
+            "display": "Russian",
+            "userSelected": false
+          },
+          {
+            "system": "http://fhir.ashmc.co.il/cs/lang-code",
+            "code": "005",
+            "display": "רוסית",
+            "userSelected": true
+          }
+        ]
+      }
+    }
+  ]
+}
