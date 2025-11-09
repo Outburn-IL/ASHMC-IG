@@ -4,8 +4,16 @@
     "profile": [
       "http://fhir.ashmc.co.il/StructureDefinition/ashmc-practitioner-role"
     ],
+    "security": [
+            {
+              "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+              "code": "practitioner",
+              "display": "מטפל"
+            }
+          ],
     "source": "http://ashmc.co.il/information-system/hilan"
   },
+      "id":"PRAC.ROLE.1",
   "identifier": [
     {
       "system": "http://fhir.ashmc.co.il/identifier/job-id",
@@ -16,13 +24,13 @@
   "practitioner": {
     "reference": "Practitioner/practitioner-md"
   },
-  "organization": [
+  "organization": 
     {
       "identifier": {
         "value": "ins.123"
       }
     }
-  ],
+  ,
   "code": [
     {
       "coding": [

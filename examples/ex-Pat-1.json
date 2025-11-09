@@ -69,10 +69,15 @@
       ]
     }
   ],
+  "id":"TAF.1212",
   "identifier": [
     {
       "system": "http://fhir.ashmc.co.il/identifier/pat-id-internal",
       "value": "1111"
+    },
+    {
+      "system": "http://fhir.ashmc.co.il/identifier/pat-id-tafnit",
+      "value": "1212"
     },
     {
       "system": "http://fhir.health.gov.il/identifier/il-national-id",
@@ -83,12 +88,8 @@
       "value": "enc1111"
     },
     {
-      "system": "http://fhir.ashmc.co.il/identifier/pat-id-tafnit",
-      "value": "TAF1111"
-    },
-    {
       "system": "http://fhir.ashmc.co.il/identifier/pat-id-cml",
-      "value": "CML1111"
+      "value": "3333"
     }
   ],
   "name": [

@@ -4,15 +4,40 @@
     "profile": [
       "http://fhir.ashmc.co.il/StructureDefinition/ashmc-diagnosis-condition"
     ],
-     "security": [
-            {
-              "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
-              "code": "diagnoses",
-              "display": "אבחנות"
-            }
-          ]
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "diagnoses",
+        "display": "אבחנות"
+      }
+    ]
   },
-  "id":"123",
+  "extension": [
+    {
+      "url": "http://fhir.ashmc.co.il/StructureDefinition/status-change",
+      "extension": [
+        {
+          "url": "date",
+          "valueDate": "2024-01-01"
+        },
+        {
+          "url": "reason",
+          "valueCodeableConcept": 
+            {
+              "text": "עדכון"
+            }
+          
+        },
+        {
+          "url": "performer",
+          "valueReference": {
+            "reference": "http://fhir.ashmc.co.il/identifier/PRAC.111"
+          }
+        }
+      ]
+    }
+  ],
+  "id": "123",
   "identifier": [
     {
       "system": "http://fhir.ashmc.co.il/identifier/cml-diagnosis-id",
