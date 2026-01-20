@@ -12,7 +12,7 @@
             }
           ]
   },
-    "id":"PRAC.1",
+    "id":"enclogin1111",
   "identifier": [
     {
       "system": "http://fhir.ashmc.co.il/identifier/login-id",
@@ -20,7 +20,16 @@
     },
     {
       "system": "http://fhir.ashmc.co.il/identifier/encrypted-login-id",
-      "value": "enclogin1111"
+      "value": "enclogin1111",
+      "type": {
+        "coding": [
+          {
+            "system": "http://fhir.health.gov.il/cs/il-core-identifier-type",
+            "code": "strong-id",
+            "display": "Strong Identifier"
+          }
+        ]
+      }
     },
     {
       "system": "http://fhir.health.gov.il/identifier/il-national-id",
