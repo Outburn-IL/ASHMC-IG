@@ -87,7 +87,16 @@
     },
     {
       "system": "http://fhir.ashmc.co.il/identifier/pat-id-tafnit",
-      "value": "123456"
+      "value": "123456",
+      "type": {
+        "coding": [
+          {
+            "system": "http://fhir.health.gov.il/cs/il-core-identifier-type",
+            "code": "strong-id",
+            "display": "Strong Identifier"
+          }
+        ]
+      }
     },
     {
       "system": "http://fhir.ashmc.co.il/identifier/pat-id-cml",

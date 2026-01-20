@@ -77,7 +77,16 @@
     },
     {
       "system": "http://fhir.ashmc.co.il/identifier/pat-id-tafnit",
-      "value": "1212"
+      "value": "1212",
+      "type": {
+        "coding": [
+          {
+            "system": "http://fhir.health.gov.il/cs/il-core-identifier-type",
+            "code": "strong-id",
+            "display": "Strong Identifier"
+          }
+        ]
+      }
     },
     {
       "system": "http://fhir.health.gov.il/identifier/il-national-id",

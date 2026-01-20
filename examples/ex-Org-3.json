@@ -17,7 +17,16 @@
   "identifier": [
     {
       "system": "http://fhir.ashmc.co.il/identifier/tafnit-id",
-      "value": "33264"
+      "value": "33264",
+      "type": {
+        "coding": [
+          {
+            "system": "http://fhir.health.gov.il/cs/il-core-identifier-type",
+            "code": "strong-id",
+            "display": "Strong Identifier"
+          }
+        ]
+      }
     }
   ],
   "type": [

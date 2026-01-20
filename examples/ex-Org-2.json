@@ -259,7 +259,16 @@
         "identifier": [
           {
             "system": "http://fhir.ashmc.co.il/identifier/site-id",
-            "value": "2"
+            "value": "2",
+            "type": {
+        "coding": [
+          {
+            "system": "http://fhir.health.gov.il/cs/il-core-identifier-type",
+            "code": "strong-id",
+            "display": "Strong Identifier"
+          }
+        ]
+      }
           }
         ],
         "type": [

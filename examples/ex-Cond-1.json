@@ -12,11 +12,20 @@
             }
           ]
   },
-  "id":"123",
+  "id":"1234",
   "identifier": [
     {
       "system": "http://fhir.ashmc.co.il/identifier/cml-diagnosis-id",
-      "value": "diag1111"
+      "value": "1234",
+      "type": {
+        "coding": [
+          {
+            "system": "http://fhir.health.gov.il/cs/il-core-identifier-type",
+            "code": "strong-id",
+            "display": "Strong Identifier"
+          }
+        ]
+      }
     }
   ],
   "clinicalStatus": {
