@@ -12,6 +12,10 @@ Description: "Assuta Ashdod Tafnit Department - Location"
 
 * id 1..1
 
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
 * identifier contains tafnit 1..1
 * identifier[tafnit].system 1..1
 * identifier[tafnit].system = "http://fhir.ashmc.co.il/identifier/tafnit-id" (exactly)
