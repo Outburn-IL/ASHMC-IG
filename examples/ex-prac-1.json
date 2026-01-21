@@ -2,7 +2,7 @@
   "resourceType": "Practitioner",
   "meta": {
     "profile": [
-      "http://fhir.ashmc.co.il/StructureDefinition/ashmc-practitioner-hilan"
+      "http://fhir.ashmc.co.il/StructureDefinition/ashmc-practitioner"
     ],
     "security": [
             {

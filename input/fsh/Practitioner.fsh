@@ -1,8 +1,8 @@
-Profile: AshmcPractitionerHilan
+Profile: AshmcPractitioner
 Parent: il-core-practitioner 
-Id: ashmc-practitioner-hilan
-Title: "ASHMC Practitioner Hilan"
-Description: "Assuta Ashdod Hilan Practitioner"
+Id: ashmc-practitioner
+Title: "ASHMC Practitioner"
+Description: "Assuta Ashdod Practitioner (Hilan, Tafnit, CML)"
 * insert ConformanceMetadata
 
 
@@ -23,13 +23,19 @@ Description: "Assuta Ashdod Hilan Practitioner"
 
 * id 1..1
 
-* identifier contains login 1..1 and enc-login 1..1
+* identifier contains login 1..1 and enc-login 1..1 and tafnit 0..1 and cml 0..1
 * identifier[login].system 1..1
 * identifier[login].system = "http://fhir.ashmc.co.il/identifier/login-id" (exactly)
 * identifier[login].value 1..1
 * identifier[enc-login].system 1..1
 * identifier[enc-login].system = "http://fhir.ashmc.co.il/identifier/encrypted-login-id" (exactly)
 * identifier[enc-login].value 1..1
+* identifier[tafnit].system 1..1
+* identifier[tafnit].system = "http://fhir.ashmc.co.il/identifier/tafnit-id" (exactly)
+* identifier[tafnit].value 1..1
+* identifier[cml].system 1..1
+* identifier[cml].system = "http://fhir.ashmc.co.il/identifier/cml-id" (exactly)
+* identifier[cml].value 1..1
 
 * name.given 1..1
 
