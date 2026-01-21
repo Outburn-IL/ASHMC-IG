@@ -2,7 +2,7 @@ Profile: AshmcPractitionerRole
 Parent: il-core-practitioner-role 
 Id: ashmc-practitioner-role
 Title: "ASHMC Practitioner Role"
-Description: "Assuta Ashdod Practitioner Role from Tafnit"
+Description: "Assuta Ashdod Practitioner Role (Hilan, Tafnit, CML)"
 * insert ConformanceMetadata
 
 * meta 1..1
@@ -30,11 +30,15 @@ Description: "Assuta Ashdod Practitioner Role from Tafnit"
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding ^slicing.ordered = false
-* code.coding contains sector 0..1 and hl7 0..1 
-* code.coding[sector].system 1..1
-* code.coding[sector].system = "http://fhir.ashmc.co.il/cs/job-sector-hilan" (exactly)
-* code.coding[sector].code 1..1
-* code.coding[sector].display 0..1
+* code.coding contains sector-hln 0..1 and sector-cml 0..1 and hl7 0..1 
+* code.coding[sector-hln].system 1..1
+* code.coding[sector-hln].system = "http://fhir.ashmc.co.il/cs/job-sector-hilan" (exactly)
+* code.coding[sector-hln].code 1..1
+* code.coding[sector-hln].display 0..1
+* code.coding[sector-cml].system 1..1
+* code.coding[sector-cml].system = "http://fhir.ashmc.co.il/cs/job-sector-cml" (exactly)
+* code.coding[sector-cml].code 1..1
+* code.coding[sector-cml].display 0..1
 * code.coding[hl7].system 1..1
 * code.coding[hl7].system = "http://terminology.hl7.org/CodeSystem/practitioner-role" (exactly)
 * code.coding[hl7].code 1..1
