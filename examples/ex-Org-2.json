@@ -17,7 +17,7 @@
           ],
           "profile": [
             "http://fhir.health.gov.il/StructureDefinition/il-core-organization",
-            "http://fhir.ashmc.co.il/StructureDefinition/ashmc-dep-tafnit"
+            "http://fhir.ashmc.co.il/StructureDefinition/ashmc-dep-tafnit-org"
           ]
         },
         "identifier": [

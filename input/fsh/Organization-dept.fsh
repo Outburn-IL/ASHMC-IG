@@ -1,8 +1,8 @@
-Profile: AshmcDepTafnit
+Profile: AshmcDepTafnitOrg
 Parent: il-hdp-organization 
-Id: ashmc-dep-tafnit
-Title: "ASHMC Department Tafnit"
-Description: "Assuta Ashdod Tafnit Department"
+Id: ashmc-dep-tafnit-org
+Title: "ASHMC Department Tafnit - Organization"
+Description: "Assuta Ashdod Tafnit Department - Organization"
 * insert ConformanceMetadata
 
 
