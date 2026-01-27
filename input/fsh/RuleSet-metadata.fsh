@@ -1,4 +1,4 @@
 RuleSet: ConformanceMetadata
 * ^version = "0.3.4"
 * ^publisher = "Assuta Ashdod Medical Center"
-* ^date = "2026-01-21"
+* ^date = "2026-01-27"

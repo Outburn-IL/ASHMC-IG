@@ -1,0 +1,102 @@
+{
+  "resourceType": "Condition",
+  "meta": {
+    "profile": [
+      "http://fhir.ashmc.co.il/StructureDefinition/ashmc-diagnosis-condition"
+    ],
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "diagnoses",
+        "display": "אבחנות"
+      }
+    ]
+  },
+  "id": "MV.1234.56",
+  "identifier": [
+    {
+      "system": "http://fhir.ashmc.co.il/identifier/mv-diagnosis-id",
+      "value": "1234.56",
+      "type": {
+        "coding": [
+          {
+            "system": "http://fhir.health.gov.il/cs/il-core-identifier-type",
+            "code": "strong-id",
+            "display": "Strong Identifier"
+          }
+        ]
+      }
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "encounter-diagnosis",
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "display": "Encounter Diagnosis"
+        },
+        {
+          "code": "diagnose",
+          "system": "http://fhir.ashmc.co.il/cs/mv-diag-category",
+          "display": "Diagnose"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "39065001",
+        "system": "http://snomed.info/sct",
+        "display": "Burn of ear"
+      },
+      {
+        "code": "3906-111",
+        "system": "http://fhir.ashmc.co.il/cs/mv-diag-code",
+        "display": "Ears"
+      },
+      {
+        "code": "3906-111-EXT",
+        "system": "http://fhir.ashmc.co.il/cs/diag-extended-code",
+        "display": "Ears ext"
+      }
+    ],
+    "text": "Ears ext"
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "49521004",
+          "system": "http://snomed.info/sct",
+          "display": "Left external ear structure"
+        }
+      ]
+    }
+  ],
+  "subject": {
+   "reference":"Patient/123456"
+  },
+  "encounter": {
+    "reference":"Encounter/55555"
+  },
+  "onsetDateTime": "2012-05-24",
+  "recordedDate": "2012-05-25",
+  "recorder": {
+    "reference": "Practitioner/111"
+  },
+  "note": [
+    {
+      "text": "Patient sick."
+    }
+  ]
+}
