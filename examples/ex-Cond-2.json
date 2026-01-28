@@ -115,16 +115,10 @@
     }
   ],
   "subject": {
-    "identifier": {
-      "system": "http://fhir.health.gov.il/identifier/il-national-id",
-      "value": "000000018"
-    }
+    "reference": "Patient/TAF.147222"
   },
   "encounter": {
-    "identifier": {
-      "system": "http://fhir.ashmc.co.il/identifier/cml-enc-session-id",
-      "value": "enc1111"
-    }
+   "reference": "Encounter/H.123123"
   },
   "onsetDateTime": "2012-05-24",
   "recordedDate": "2012-05-25",

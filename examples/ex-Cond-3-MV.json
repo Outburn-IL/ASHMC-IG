@@ -84,10 +84,10 @@
     }
   ],
   "subject": {
-   "reference":"Patient/123456"
+   "reference":"Patient/TAF.123456"
   },
   "encounter": {
-    "reference":"Encounter/55555"
+    "reference":"Encounter/AD.55555"
   },
   "onsetDateTime": "2012-05-24",
   "recordedDate": "2012-05-25",
