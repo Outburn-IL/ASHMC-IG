@@ -1,8 +1,3 @@
-Invariant: ext-docref-file-loc-1
-Description: "Exactly one of `valueString` or `valueUrl` SHALL be present"
-Expression: "valueString.exists() xor valueUrl.exists()"
-Severity: #error
-
 Extension: DocumentReferenceFileLocation
 Id: ext-document-reference-file-location
 Title: "Ext: Document Reference File Location"
@@ -16,8 +11,6 @@ Description: "Indicates the physical or logical file location of the binary cont
 * ^context[0].expression = "DocumentReference.content.attachment"
 
 * . ^comment = "This extension is intentionally not included in the DocumentReference profile, as it does not represent part of the logical FHIR resource. It is used solely for internal processing within a facade or integration layer to resolve the physical file location and populate DocumentReference.content.attachment.data. The extension is removed prior to returning the resource to clients and therefore is not part of the exposed or persisted resource definition."
-
-* obeys ext-docref-file-loc-1
 
 * value[x] only string or url
 * valueString 0..1

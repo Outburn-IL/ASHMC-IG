@@ -5,7 +5,7 @@
     "security": [
       {
         "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
-        "code": "סיכומים",
+        "code": "clinicalNotes",
         "display": "סיכומים"
       }
     ],

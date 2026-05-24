@@ -14,7 +14,7 @@ Description: "Asuta Ashdod Document Reference"
 // masterIdentifier
 * masterIdentifier 1..1
 * masterIdentifier.system 1..1
-* masterIdentifier.system = "http://fhir.ashmc.co.il/identifier/document-router-versioned-message-id" (exactly)
+// * masterIdentifier.system = "http://fhir.ashmc.co.il/identifier/document-router-versioned-message-id" (exactly)
 * masterIdentifier.value 1..1
 
 // docStatus
@@ -25,7 +25,7 @@ Description: "Asuta Ashdod Document Reference"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
-* identifier contains router-message-id 1..1
+* identifier contains router-message-id 0..1
 * identifier[router-message-id].system 1..1
 * identifier[router-message-id].system = "http://fhir.ashmc.co.il/identifier/document-router-message-id" (exactly)
 * identifier[router-message-id].value 1..1
@@ -34,7 +34,7 @@ Description: "Asuta Ashdod Document Reference"
 * type.coding ^slicing.discriminator.type = #value
 * type.coding ^slicing.discriminator.path = "system"
 * type.coding ^slicing.rules = #open
-* type.coding contains msg-sub-type 1..1 and loinc 1..1
+* type.coding contains msg-sub-type 0..1 and loinc 1..1
 
 * type.coding[msg-sub-type].system 1..1
 * type.coding[msg-sub-type].system = "http://fhir.ashmc.co.il/identifier/document-message-sub-type" (exactly)
